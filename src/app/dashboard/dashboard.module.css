@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+  height: 100vh;
+}
+.sidewrap {
+  width: 250px;
+}
+.mainwrap {
+  flex-grow: 1;
+  background-color: #f4f4f4;
+}

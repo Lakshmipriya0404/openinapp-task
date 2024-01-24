@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+}
+.homewrap {
+  position: relative;
+  width: 50%;
+  height: 100vh;
+  background-image: url("/leftside.png");
+  background-size: cover;
+  z-index: -1;
+}
+.homewrap h1 {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-weight: 700;
+  font-size: 72px;
+  color: #fff;
+}
+.loginwrap {
+  width: 50%;
+  height: 100vh;
+}
+.social {
+  position: absolute;
+  bottom: 10px;
+  left: 40%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
