@@ -1,7 +1,7 @@
 .container {
   display: flex;
   justify-content: space-between;
-  height: 100vh;
+  height: 100%;
 }
 .homewrap {
   position: relative;
@@ -35,4 +35,24 @@
   transform: translateX(-50%);
   display: flex;
   gap: 10px;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    height: 100%;
+  }
+  .homewrap,
+  .loginwrap {
+    width: 100%;
+    height: 20vh;
+  }
+
+  .homewrap h1 {
+    top: 30%;
+    font-size: 36px;
+  }
+
+  .social {
+    bottom: 5%;
+  }
 }

@@ -1,1 +1,6 @@
-
+.container {
+  border-radius: 5px;
+  padding: 100px 200px;
+  text-align: center;
+  cursor: pointer;
+}

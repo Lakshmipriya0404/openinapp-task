@@ -22,11 +22,6 @@
   background-color: #f2f2f2;
 }
 
-.tablebody tr td a {
-  text-decoration: none;
-  color: #007bff;
-}
-
 .tablebody tr td select {
   width: 100%;
   padding: 8px;
