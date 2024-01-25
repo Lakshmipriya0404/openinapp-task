@@ -1,0 +1,46 @@
+.uploadwrap {
+  padding: 20px;
+}
+
+.uploadtable {
+  margin-top: 20px;
+}
+
+.uploadtable table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.uploadtable table th,
+.uploadtable table td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.uploadtable table th {
+  background-color: #f2f2f2;
+}
+
+.tablebody tr td a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.tablebody tr td select {
+  width: 100%;
+  padding: 8px;
+}
+
+.tagContainer {
+  margin-bottom: 5px;
+  display: inline-block;
+  background-color: #f2f2f2;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.cancelbtn {
+  margin-left: 5px;
+  cursor: pointer;
+}

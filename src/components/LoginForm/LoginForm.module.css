@@ -1,18 +1,47 @@
 .card {
-  display: flex;
-  height: 100vh;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  /* align-items: stretch;
-  justify-content: flex-start; */
-  width: 400px;
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
 }
-.header h1 {
+.cardheader {
+  margin-bottom: 20px;
+}
+.cardheader h1 {
   font-size: 20px;
-  margin: 0;
+  margin-bottom: 5px;
 }
-.header p {
+.cardheader p {
   font-size: 16px;
   margin: 0;
+}
+.socialbtns {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.cardmain form {
+  display: flex;
+  flex-direction: column;
+}
+.cardmain form label {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.cardmain form input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.cardmain form a {
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: #007bff;
+}
+
+.cardmain form a:hover {
+  text-decoration: underline;
 }
