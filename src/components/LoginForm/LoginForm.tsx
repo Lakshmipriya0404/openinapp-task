@@ -2,6 +2,7 @@
 import React from "react";
 import styles from "./LoginForm.module.css";
 import { Button } from "../Button/Button";
+import Link from "next/link";
 
 const LoginForm = () => {
   return (
@@ -16,12 +17,14 @@ const LoginForm = () => {
           variant="social"
           imgPath="/icon-google.svg"
           socialButtonName="Google"
+          style={{ padding: "10px", width: "100%" }}
         />
         <Button
           title=""
           variant="social"
           imgPath="/ios.svg"
           socialButtonName="Apple"
+          style={{ padding: "10px", width: "100%" }}
         />
       </div>
       <div className={styles.cardmain}>
@@ -31,12 +34,15 @@ const LoginForm = () => {
           <label htmlFor="password">Password</label>
           <input type="password" />
           <a href="">Forgot password?</a>
-          <Button
-            title="Login"
-            variant="text"
-            hoverColor="blue"
-            backgroundColor="pink"
-          />
+          <Link href="/dashboard/uploads">
+            <Button
+              title="Sign in"
+              variant="text"
+              hoverColor="blue"
+              backgroundColor="#605BFF"
+              style={{ padding: "10px", width: "100%" }}
+            />
+          </Link>
         </form>
       </div>
     </div>
