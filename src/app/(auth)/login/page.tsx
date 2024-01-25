@@ -6,7 +6,7 @@ const LoginPage = () => {
   return (
     <div className={styles.container}>
       <div className={styles.homewrap}>
-        <div className={styles.logo}>logo</div>
+        <div className={styles.logo}></div>
         <h1 className={styles.header}>BASE</h1>
         <div className={styles.social}>
           <Image src={"/discord.svg"} alt={""} width={"30"} height={"30"} />

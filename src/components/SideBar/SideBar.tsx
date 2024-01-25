@@ -18,7 +18,7 @@ const SideBar = () => {
       <div className={styles.listwrap}>
         {sidebarList.map((item) => (
           <div key={item.name} className={styles.listitem}>
-            <Image src={item.imgpath} alt="" height="30" width="30" />
+            <Image src={item.imgpath} alt="" height="20" width="20" />
             <h2>{item.name}</h2>
           </div>
         ))}

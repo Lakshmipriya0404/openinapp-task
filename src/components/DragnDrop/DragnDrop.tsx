@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import styles from "./DragnDrop.module.css";
 
 interface DragnDropProps {
   onCsvDrop: (content: string) => void;
@@ -53,30 +54,24 @@ const DragnDrop: React.FC<DragnDropProps> = ({ onCsvDrop }) => {
     }
   };
 
-  const containerStyle: React.CSSProperties = {
-    border: isDragOver ? "2px dashed #007bff" : "2px dashed #ccc",
-    borderRadius: "5px",
-    padding: "20px",
-    textAlign: "center",
-    cursor: "pointer",
-  };
-
-  const labelStyle: React.CSSProperties = {
-    color: "blue",
-    cursor: "pointer",
-  };
-
   return (
     <div
-      style={containerStyle}
+      className={styles.container}
       onDragEnter={handleDragEnter}
       onDragLeave={handleDragLeave}
       onDragOver={handleDragOver}
       onDrop={handleDrop}
+      style={{ border: isDragOver ? "2px dashed #007bff" : "2px dashed #ccc" }}
     >
       <p>Drag and drop a CSV file here</p>
       <p>or</p>
-      <label htmlFor="fileInput" style={labelStyle}>
+      <label
+        htmlFor="fileInput"
+        style={{
+          color: "blue",
+          cursor: "pointer",
+        }}
+      >
         Browse
       </label>
       <input
@@ -95,6 +90,7 @@ const DragnDrop: React.FC<DragnDropProps> = ({ onCsvDrop }) => {
           padding: "10px 20px",
           borderRadius: "5px",
           cursor: "pointer",
+          backgroundColor: "#605BFF",
         }}
       >
         Upload

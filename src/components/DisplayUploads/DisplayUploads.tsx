@@ -58,7 +58,7 @@ const DisplayUploads: React.FC<DisplayUploadProps> = ({ csvContent }) => {
 
   return (
     <div className={styles.uploadwrap}>
-      <h2>Uploads</h2>
+      <h2>Upload CSV</h2>
       <div className={styles.uploadtable}>
         {tableData.length > 0 && (
           <table>
@@ -73,13 +73,14 @@ const DisplayUploads: React.FC<DisplayUploadProps> = ({ csvContent }) => {
             </thead>
             <tbody>
               {tableData.slice(0, 5).map((row, index) => (
-                <tr key={index}>
+                <tr key={index} className={styles.trdata}>
                   <td>{row.id}</td>
                   <td>
                     <a
                       href={row.links}
                       target="_blank"
                       rel="noopener noreferrer"
+                      style={{ color: "#007bff" }}
                     >
                       {row.links}
                     </a>
@@ -112,7 +113,7 @@ const DisplayUploads: React.FC<DisplayUploadProps> = ({ csvContent }) => {
                         <div key={tagIndex} className={styles.tagContainer}>
                           <span>{tag}</span>
                           <button onClick={() => handleRemoveTag(row.id, tag)}>
-                            Cancel
+                            X
                           </button>
                         </div>
                       ))}
