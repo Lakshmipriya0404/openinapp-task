@@ -19,7 +19,7 @@ const TextButton: React.FC<TextButtonProps> = ({
 
   const style = {
     ...textButtonStyle,
-    ...baseButtonProps,
+    ...baseButtonProps.style,
   };
 
   const hoverStyle = {

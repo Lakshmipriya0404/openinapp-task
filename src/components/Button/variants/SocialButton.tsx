@@ -27,7 +27,7 @@ const SocialButton: React.FC<SocialButtonProps> = ({
   };
   const style = {
     ...socialButtonStyle,
-    ...baseButtonProps,
+    ...baseButtonProps.style,
   };
   const hoverStyle = {
     backgroundColor: "#f0f0f0",
